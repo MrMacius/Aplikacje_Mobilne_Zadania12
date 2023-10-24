@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="app_name">ZAD1AM</string>
+    <string name="button_true">Prawda</string>
+    <string name="button_false">Fałsz</string>
+    <string name="button_next">Następne</string>
+
+    <string name="q_cpp">C++ posiada bazowo (bez bibliotek) typ danych String</string>
+    <string name="q_java">Java nie posiada typu danych Struct</string>
+    <string name="q_python">Python jest językiem kompilowanym</string>
+    <string name="q_csharp">C# do wypisywania tekstu na wyjściu wykorzystuje funkcję printf()</string>
+    <string name="q_js">Kod Javascript jest wykonywany po stronie serwera</string>
+    <string name="q_php">Kod PHP jest wykonywany po stronie serwera</string>
+
+    <string name="correct_answer">Poprawna Odpowiedź! :3</string>
+    <string name="incorrect_answer">Niepoprawna Odpowiedź! :[</string>
+
+</resources>
+
