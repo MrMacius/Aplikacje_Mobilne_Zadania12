@@ -71,10 +71,10 @@ public class MainActivity extends AppCompatActivity {
         if(answer == correctAnswer){
             resultMessageId = R.string.correct_answer;
             correctCounter = correctCounter+1;
-            counterCorrect.setText(String.valueOf(correctCounter));
+            counterCorrect.setText(String.valueOf(correctCounter)+"/6 poprawnych odpowiedzi");
         }else{
             resultMessageId = R.string.incorrect_answer;
-            counterCorrect.setText(String.valueOf(correctCounter));
+            counterCorrect.setText(String.valueOf(correctCounter)+"/6 poprawnych odpowiedzi");
         }
         Toast.makeText(this,resultMessageId,Toast.LENGTH_SHORT).show();
     }
