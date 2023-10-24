@@ -40,4 +40,10 @@
         android:layout_height="wrap_content"
         android:text="@string/button_next" />
 
+    <TextView
+        android:id="@+id/counter_correct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/correct_counter" />
+
 </LinearLayout>

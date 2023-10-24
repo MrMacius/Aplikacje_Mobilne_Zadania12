@@ -15,5 +15,7 @@
     <string name="correct_answer">Poprawna Odpowiedź! :3</string>
     <string name="incorrect_answer">Niepoprawna Odpowiedź! :[</string>
 
+    <string name="correct_counter">/6 poprawnych odpowiedzi</string>
+
 </resources>
 

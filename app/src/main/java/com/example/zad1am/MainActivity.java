@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private Button falseButton;
     private Button nextButton;
     private TextView questionTextView;
+    private TextView counterCorrect;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         falseButton = findViewById(R.id.false_button);
         nextButton = findViewById(R.id.next_button);
         questionTextView = findViewById(R.id.question_text_view);
+        counterCorrect = findViewById(R.id.counter_correct);
 
         trueButton.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -61,13 +63,18 @@ public class MainActivity extends AppCompatActivity {
 
     private int currentIndex = 0;
 
+    public int correctCounter = 0;
+
     private void checkCorrect(boolean answer){
         boolean correctAnswer = questions[currentIndex].isTrueAnswer();
         int resultMessageId = 0;
         if(answer == correctAnswer){
             resultMessageId = R.string.correct_answer;
+            correctCounter = correctCounter+1;
+            counterCorrect.setText(String.valueOf(correctCounter));
         }else{
             resultMessageId = R.string.incorrect_answer;
+            counterCorrect.setText(String.valueOf(correctCounter));
         }
         Toast.makeText(this,resultMessageId,Toast.LENGTH_SHORT).show();
     }
